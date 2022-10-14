@@ -10,7 +10,7 @@ public class Program
         int count = Convert.ToInt32(Console.ReadLine());
 
         Random rnd = new Random(seed);
-        for (int ctr = 0; ctr <= count; ctr++)
+        for (int ctr = 0; ctr < count; ctr++)
         {
             Console.Write("{0,3}   ", rnd.Next(-10, 11));
         }
