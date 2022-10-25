@@ -61,7 +61,7 @@ namespace practice6 {
             Console.WriteLine("\nAES-шифрування:");
             Console.WriteLine("Що шифруємо: " + firstData);
             Console.WriteLine("Зашифрований текст: " + Convert.ToBase64String(aesEnc));
-            Console.WriteLine("Розшифрований текст" + aesDecMes + "\n");//розшифроване повідомлення
+            Console.WriteLine("Розшифрований текст " + aesDecMes + "\n");//розшифроване повідомлення
             //Це наше ДЕС шифрування________________________________________________________________________________________
             //шифруємо використовуючи повідомлення, ключ, вектор ініціалізації
             var encrypted_des = desCh.Encrypt(bytePass, key_des, iv_des);
