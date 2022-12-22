@@ -33,11 +33,11 @@ class Program
             case 3:
                 byte[] encryptContent = File.ReadAllBytes(path_toFile).ToArray();
                 var decryption = new XOR_program();
-                Console.WriteLine("Введіть пароль для шифрування: ");
-                string d_password = Console.ReadLine();
+                Console.WriteLine("Введіть пароль для розшифровування: ");
+                string password_d = Console.ReadLine();
                 Console.WriteLine("\n");
-                byte[] password_d = Encoding.UTF8.GetBytes(d_password);
-                var decryptedProcess = decryption.Decryption(encryptContent, password_d);
+                byte[] passwordDecryption = Encoding.UTF8.GetBytes(password_d);
+                var decryptedProcess = decryption.Decryption(encryptContent, passwordDecryption);
                 Console.WriteLine("чекаємо...\n");
                 Console.WriteLine(Encoding.UTF8.GetString(decryptedProcess));
                 Console.WriteLine("\n");
@@ -48,7 +48,6 @@ class Program
 
 
     }
-
 
 
 }

@@ -4,7 +4,7 @@ using System.Security.Principal;
 using System.Text;
 using System.Threading;
 
-namespace ConsoleApp11
+namespace practice11_12
 {
     static class userDataManager
     {

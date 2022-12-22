@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Security.Cryptography;
 
-namespace ConsoleApp11
+namespace practice11_12
 {
     public class SaltedHash
     {

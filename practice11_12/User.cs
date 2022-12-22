@@ -1,4 +1,4 @@
-﻿namespace ConsoleApp11
+﻿namespace practice11_12
 {
     class User
     {

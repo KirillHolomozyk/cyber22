@@ -7,7 +7,7 @@ namespace ConsoleApp7
 {
     class Program
     {
-        static string forAllKey = "publicK.xml";
+        static string forAllKey = "public.xml";
 
 
         private static void
@@ -44,13 +44,8 @@ namespace ConsoleApp7
             Console.Write("Введiть ваш текст: ");
             string sourceStr = Console.ReadLine();
             byte[] sourceBytes = Encoding.UTF8.GetBytes(sourceStr);
-            Console.WriteLine("---");
 
-            
-            
-            
-            
-            
+      
             RSAChipher.AssignNewKey();//ініціюємо створення нових ключів
             byte[] encInfo = RSAChipher.EncryptData(sourceBytes);
             Console.Write("Зашифрована iнформацiя: " + Convert.ToBase64String(encInfo));
